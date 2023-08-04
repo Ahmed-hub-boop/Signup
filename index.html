@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Courgette&family=El+Messiri:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gugi&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lily+Script+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+HK:wght@100;300;400;500;700;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Orbitron:wght@500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Create New Account</title>
+    </head>
+    <body>
+        <section class="main">
+            <div class="cont">
+                <div class="c-1">START FOR FREE</div>
+                <div class="c-2">Create new account<span>.</span></div>
+                <div class="c-3">Already A Member? <a href="##">Log In</a></div>
+                <div class="main-form">
+                    <form name="form1">
+                        <div class="f-1">
+                            <div class="ff-1" id="ff1">
+                                <span class="lab" id="lab1">First name</span>
+                                <input type="text" name="frtxt" oninput="txt()">
+                                <span class="ico"><i class="fa-solid fa-address-card"></i></span>
+                            </div>
+                            <div class="ff-2" id="ff2">
+                                <span class="lab" id="lab2">Last name</span>
+                                <input type="text" name="lttxt" oninput="txt2()">
+                                <span class="ico"><i class="fa-solid fa-address-card"></i></span>
+                            </div>
+                        </div>
+                        <div class="f-2">
+                            <div class="f-2-1" id="ff3">
+                                <span class="lab" id="lab3">Email</span>
+                                <input type="text" name="email" oninput="txt3()">
+                                <span class="ico"><i class="fa-solid fa-envelope"></i></span>
+                            </div>
+                        </div>
+                        <div class="f-2">
+                            <div class="f-2-1" id="pas">
+                                <span class="lab" id="lab4">Password</span>
+                                <input type="password" name="pasword" oninput="txt4()" id="pass">
+                                <div class="ico" onclick="show()" id="ic"><i class="fa-solid fa-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="f-3">
+                            <input type="reset" class="fb-1" value="Clear Data">
+                            <div class="fb-2" onclick="showcard()">Create account</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="main-card" id="mcard">
+            <div class="card">
+                <div class="cd-1"><span onclick="hidecard()"><i class="fa-solid fa-xmark"></i></span></div>
+                <div class="cd-2">
+                    <span class="m-cd">
+                        <span class="add"><i class="fa-solid fa-plus"></i></span>
+                        <img height="120px" width="120px" src="https://scontent.fcai19-8.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&cb=99be929b-3346023f&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeGdiUFujg0BX6-q6QLgndAsso2H55p0AlGyjYfnmnQCUXRMNUtXnSbKTQ8fdYaWGEwGwIlA4JDlwoZDmnvnsTN6&_nc_ohc=DH2e7R2-NdgAX9946MK&_nc_ht=scontent.fcai19-8.fna&oh=00_AfAhDq760ROi2uJBuRvZBRTsN1cdQgjccIpkHw9w3jW-Dg&oe=64D28FB8">
+                    </span>
+                </div>
+                <div class="cd-3" id="cd3"></div>
+                <div class="cd-4" id="cd4"></div>
+                <div class="cd-5">
+                    <a href="">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </body><script src="java.js"></script>
+</html>

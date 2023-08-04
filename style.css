@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    /*background: url('forest-2560x1440-mountains-violet-birds-art-hd-16431.jpg');
+    background-size: cover;*/
+    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
+    
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #272a37;
+}
+.cont{
+    width: 55%;
+    padding: 15vh 25vh;
+}
+.c-1{
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+    font-weight: 600;
+}
+.c-2{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+}
+.c-2 span{
+    color: rgb(0, 98, 255);
+    margin-left: 4px;
+}
+.c-3{
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+    font-weight: 600;
+}
+.c-3 a{
+    color: rgb(0, 98, 255);
+}
+.main-form{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.f-1{
+    width: 100%;
+    display: flex;
+}
+.ff-1{
+    width: 50%;
+    height: 50px;
+    background-color: #323647;
+    border-radius:15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+.ff-1 input{
+    width: 100%;
+    font-size: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.ff-1 .ico{
+    color: rgb(161, 161, 161);
+}
+.ff-1 .lab{
+    position: absolute;
+    color: white;
+    transition: 0.5s all ease;
+}
+.ff-2{
+    width: 50%;
+    height: 50px;
+    background-color: #323647;
+    border-radius:15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+.ff-2 input{
+    width: 100%;
+    font-size: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.ff-2 .ico{
+    color: rgb(161, 161, 161);
+}
+.ff-2 .lab{
+    position: absolute;
+    color: white;
+    transition: 0.5s all ease;
+}
+.f-2{
+    width: 100%;
+    display: flex;
+}
+.f-2-1{
+    width: 100%;
+    height: 50px;
+    background-color: #323647;
+    border-radius:15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.f-2-1 input{
+    width: 100%;
+    font-size: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.f-2-1 .ico{
+    color: rgb(161, 161, 161);
+}
+.f-2-1 .lab{
+    position: absolute;
+    color: white;
+    transition: 0.5s all ease;
+}
+#pas input{
+    letter-spacing: 3px;
+}
+#pas .ico{
+    display: none;
+    transition: 0.5s all ease;
+}
+.f-3{
+    margin-top: 35px;
+    display: flex;
+    width: 100%;
+}
+.f-3 .fb-1{
+    width: 50%;
+    height: 50px;
+    background-color: #5c6073;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+}
+.f-3 .fb-2{
+    width: 50%;
+    height: 50px;
+    background-color: #5c6073;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    margin-left: 10px;
+    background-color: rgb(0, 98, 255);
+}
+.main-card{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.564);
+    z-index: 99;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.card{
+    width: 500px;
+    height: 500px;
+    background-color: #272a37;
+    border-radius: 15px;
+}
+.cd-1{
+    display: flex;
+    justify-content: end;
+}
+.cd-1 span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.cd-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cd-2 span img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cd-2 .m-cd{
+    position: relative;
+}
+.add{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 98, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    left: 90px;
+    top: 90px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+.cd-2:hover .add{
+    transform: rotate(360deg);
+}
+.cd-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 98, 255);
+    font-size: 35px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.cd-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.cd-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cd-5 a{
+    width: 50%;
+    height: 50px;
+    background-color: #5c6073;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 98, 255);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+@media screen and (max-width:1350px){
+    .cont{
+        width: 100%;
+        padding: 10vh;
+    }
+}
+@media screen and (max-width:600px){
+    .cont{
+        width: 100%;
+        padding: 10vh 5vh;
+    }
+    .main-form{
+        margin-left: 0;
+    }
+    .c-1{
+        display: flex;
+        justify-content: center;
+    }
+    .c-2{
+        display: flex;
+        justify-content: center;
+    }
+    .c-3{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:470px){
+    .cont{
+        width: 100%;
+        padding: 12vh 2vh;
+    }
+    .f-1{
+        display: inline-block;
+    }
+    .ff-1{
+        width: 100%;
+    }
+    .ff-2{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .f-3{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+    }
+    .f-3 .fb-1{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .f-3 .fb-2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .c-1{
+        font-size: 15px;
+    }
+    .c-2{
+        font-size: 30px;
+    }
+    .c-3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:360px){
+    .c-1{
+        font-size: 15px;
+    }
+    .c-2{
+        font-size: 25px;
+    }
+    .c-3{
+        font-size: 15px;
+    }
+}
